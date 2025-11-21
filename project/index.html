@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double Cheese — Premium Pizza</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Double Cheese</div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#promos">Promos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="hamburger" class="hamburger"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-slider">
+      <div class="slide active" ><img src="../assets/images/bq chicken.jpg" ></div>
+      <div class="slide"><img src="../assets/images/classic.jpg" ></div>
+      <div class="slide" ><img src="../assets/images/four.jpg" ></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Double the Cheese, Double the Taste</h1>
+      <p>Fresh pizzas, juicy burgers, and combos — all loaded with extra cheese.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Order Now</a>
+        <a href="#contact" class="btn btn-outline">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMOS SECTION ===== -->
+  <section id="promos" class="section">
+    <h2 class="section-title">Special Offers</h2>
+    <div class="grid promos-grid">
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/meat.jpg" alt="Buy 1 Get 1"></div>
+        <div class="card-body">
+          <h3>Buy 1 Get 1 — Medium Pizza</h3>
+          <div class="price-row"><span class="price">$14</span><button class="btn add-btn" data-name="Buy 1 Get 1 - Medium Pizza" data-price="14">Add</button></div>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/seasonal special.jpg" alt="Combo Deal"></div>
+        <div class="card-body">
+          <h3>Combo Deal — Pizza + Fries + Drink</h3>
+          <div class="price-row"><span class="price">$19</span><button class="btn add-btn" data-name="Combo Deal" data-price="19">Add</button></div>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/hawaiian.jpg" alt="Family Pack"></div>
+        <div class="card-body">
+          <h3>Weekend Family Pack</h3>
+          <div class="price-row"><span class="price">$39</span><button class="btn add-btn" data-name="Family Pack" data-price="39">Add</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="section">
+    <h2 class="section-title">Menu Highlights</h2>
+    <div class="grid menu-grid">
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/margherita.jpg" alt="Classic Cheese"></div>
+        <div class="card-body">
+          <h3>Classic Cheese Pizza</h3>
+          <p>Tomato sauce, mozzarella, oregano</p>
+          <div class="price-row"><span class="price">$12</span><button class="btn add-btn" data-name="Classic Cheese Pizza" data-price="12">Add</button></div>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/meat.jpg" alt="Pepperoni"></div>
+        <div class="card-body">
+          <h3>Pepperoni Pizza</h3>
+          <p>Pepperoni, cheese, chili flakes</p>
+          <div class="price-row"><span class="price">$14</span><button class="btn add-btn" data-name="Pepperoni Pizza" data-price="14">Add</button></div>
+        </div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-img"><img src="../assets/images/paneer tikka.jpg" alt="Cheese Burger"></div>
+        <div class="card-body">
+          <h3>Cheese Burger</h3>
+          <p>Beef patty, double cheese</p>
+          <div class="price-row"><span class="price">$10</span><button class="btn add-btn" data-name="Cheese Burger" data-price="10">Add</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact & Reservation</h2>
+    <div class="contact-grid">
+      <iframe src="https://www.google.com/maps/embed?...your_map_link..." frameborder="0" allowfullscreen></iframe>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +92 21 111 717 717</p>
+        <p><i class="fas fa-map-marker-alt"></i> 1-B/FL-6, Block 7, Gulshan-e-Iqbal, Karachi</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h3>Your Order</h3>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="cartTotal">0.00</span></p>
+    <button id="checkoutBtn" class="btn btn-primary">Checkout (WhatsApp)</button>
+    <button id="closeCart" class="btn btn-outline">Close</button>
+  </div>
+  <button id="cartToggle" class="cart-toggle"><i class="fas fa-shopping-cart"></i> Cart</button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2025 Double Cheese</div>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
